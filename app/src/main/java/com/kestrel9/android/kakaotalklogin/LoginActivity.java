@@ -25,7 +25,6 @@ public class LoginActivity extends BaseActivity {
 
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
-        Session.getCurrentSession().checkAndImplicitOpen();
 
     }
 

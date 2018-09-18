@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
+import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.util.exception.KakaoException;
 import com.kestrel9.android.kakaotalklogin.common.BaseActivity;
 
@@ -44,6 +46,13 @@ public class MainActivity extends BaseActivity {
             public void onClick(View v) {
                 if (!Session.getCurrentSession().checkAndImplicitOpen()){
                     redirectLoginActivity();
+                } else {
+                    UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {
+                        @Override
+                        public void onCompleteLogout() {
+
+                        }
+                    });
                 }
             }
         });
