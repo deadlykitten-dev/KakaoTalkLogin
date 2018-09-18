@@ -201,7 +201,7 @@ fabric.properties
 
 
 # End of https://www.gitignore.io/api/java,android,androidstudio
-!/app/src/main/res/values/kakao_strings.xml
 /app/src/main/res/values/kakao_strings.xml
 .idea/
 app/src/main/res/values/kakao_strings.xml
+src/main/res/values/kakao_strings.xml
