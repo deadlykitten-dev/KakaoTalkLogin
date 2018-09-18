@@ -3,4 +3,8 @@
 
     <!--text-->
     <string name="progress_loading">Loading…</string>
+
+    <string name="error_message_for_service_unavailable">서비스 연결상태가 좋지 않습니다.\n\n잠시 후 다시 시도해 주세요.</string>
+    <string name="com_kakao_confirm_unlink">이 앱을 탈퇴하시겠습니까?</string>
+    <string name="com_kakao_ok_button">확인</string>
 </resources>
